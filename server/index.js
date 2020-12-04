@@ -1,7 +1,9 @@
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
+
 
 // Database Connection
 const dbConfig = require('./db.js');
@@ -12,7 +14,7 @@ mongoose.connect(dbConfig.url, {useNewUrlParser: true, useUnifiedTopology: true,
 const passport = require('passport');
 const session = require('express-session');
 app.use(session({
-  secret: "Our little secret.",
+  secret: process.env.SECRET,
   resave: false,
   saveUninitialized: false
 }));
