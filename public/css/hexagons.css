@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #222831;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar {
+  background-color: #222831;
+}
+
+
+.navbar-brand {
+  font-family: 'Rock Salt', cursive;
+  color: #fff;
+  font-weight: 200;
+  padding: 16px 32px;
+  font-size: 1.7rem;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+  margin: auto 50px;
+}
+
+.navbar-collapse .show {
+  justify-content: flex-end;
+}
+
+.navbar-toggler {
+  border: none
+}
+
+.nav-item {
+  font-size: 1.1rem;
+
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  padding-top: 15%;
+  background-color: #222831;
+}
+
+footer p {
+  color: #393e46;
+  font-family: 'Roboto', sans-serif;
+}
+
+.my-box {
+  padding: 0 30px;
+  align-items: center;
+
+
+}
+/* LIST SECTION */
+
+
+.box {
+  margin: 50px auto;
+  background: #393e46;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.small-box {
+  max-width: 313px;
+  margin: 50px auto;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3%;
+}
+
+.title-box {
+
+}
+
+.sub-title {
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 200;
+  padding: 0;
+}
+
+.login-box {
+  margin: 20px auto;
+  background: #393e46;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.submit {
+  border: none;
+  width: 313px;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.user-input {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  width: 313px;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.newItem {
+  border-bottom: 0;
+}
+
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: grey;
+  color: grey;
+}
+
+
+p {
+  margin: 20px;
+  padding: 0 5px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #eeeeee;
+}
+
+
+.add-btn {
+  min-height: 50px;
+  width: 50px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 30px;
+  padding-right: 6px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+
+input[type="text"] {
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+  color: #fff;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 grey;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+input[type="color"] {
+  visibility: hidden;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  margin-left: 25px;
+}
+
+/* TAB SECTION */
+
+.tab-bar {
+  margin: 0 auto 50px;
+  border-radius: 5px;
+}
+
+.tab-title {
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1%;
+}
+
+/* CALENDAR SECTION */
+
+.calendar-styles {
+  color: #fff;
+}
+
+.cal-box {
+  margin: 0 15px;
+}
+
+/* TOTALS SECTION */
+.total-box {
+  margin: 0 20px 20px;
+  height: 200px;
+  width: 150px;
+  background: #393e46;
+  border-radius: 5px;
+  border: 2px solid;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.total-title {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 30px;
+  padding: 3%;
+}
+
+.total-num {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3%;
+}
+
+/* HEXAGON SECTION */
+
+.hexagons {
+    margin: 50px auto;
+}
+
+#hexGrid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  font-size: 1rem;
+  list-style-type: none;
+  padding-left: 10%;
+}
+
+.hex {
+  position: relative;
+  visibility: hidden;
+}
+
+.hex::after{
+  content:'';
+  display:block;
+  padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
+}
+
+.hexIn {
+  position: absolute;
+  width:96%;
+  padding-bottom: 110.851%; /* =  width / sin(60) */
+  margin:0 2%;
+  overflow: hidden;
+  visibility: hidden;
+  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+  -webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+      -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+          transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+}
+
+.hexIn * {
+  position: absolute;
+  visibility: visible;
+  outline:1px solid transparent;
+}
+.hexLink {
+    display:block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+        -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+            transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+}
+
+/*** HEX CONTENT **********************************************************************/
+.hex-background {
+  background-image: url("../images/hexabump.png");
+  left: -100%;
+  right: -100%;
+  width: auto;
+  height: 100%;
+}
+
+
+.hex h1, .hex p {
+  /* width: 70%;
+  padding: 2%; */
+  box-sizing:border-box;
+  -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
+          transition:          transform .2s ease-out, opacity .3s ease-out;
+}
+.hex h1 {
+  bottom: 30%;
+  padding: 50% 12% 0;
+  font-size: 1rem;
+  font-weight: 500;
+  z-index: 1;
+  -webkit-transform:translate3d(0,-100%,0);
+      -ms-transform:translate3d(0,-100%,0);
+          transform:translate3d(0,-100%,0);
+}
+.hex h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  width: 10%;
+  text-align: center;
+
+}
+.hex p {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  top: 35%;
+  /* padding: 0 0% 5%; */
+/*
+  -webkit-transform:translate3d(0,100%,0);
+      -ms-transform:translate3d(0,100%,0);
+          transform:translate3d(0,100%,0); */
+}
+
+
+/*** HOVER EFFECT  **********************************************************************/
+.hexLink:hover h1, .hexLink:focus h1
+{
+  -webkit-transform:translate3d(0,0,0);
+      -ms-transform:translate3d(0,0,0);
+          transform:translate3d(0,0,0);
+}
+
+/*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
+
+@media (min-width:901px) { /* <- 4-3  hexagons per row */
+  #hexGrid{
+    padding-bottom: 5%
+  }
+  .hex {
+    width: 20%; /* = 100 / 5 */
+  }
+  .hex:nth-child(7n+5){ /* first hexagon of even rows */
+    margin-left:10%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 900px) and (min-width:601px) { /* <- 3-2  hexagons per row */
+  /* .hex p {
+    top: 0;
+    padding: 0;
+} */
+  #hexGrid{
+    padding-bottom: 5%
+  }
+  .hex {
+    width: 20%; /* = 100 / 5 */
+  }
+  .hex:nth-child(7n+5){ /* first hexagon of even rows */
+    margin-left:10%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 600px) { /* <- 2-1  hexagons per row */
+  #hexGrid{
+    padding-bottom: 5%
+  }
+  .hex {
+    width: 20%; /* = 100 / 5 */
+  }
+  .hex:nth-child(7n+5){ /* first hexagon of even rows */
+    margin-left:10%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 400px) {
+    #hexGrid {
+        font-size: 13px;
+    }
+}
